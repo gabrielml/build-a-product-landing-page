@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>FCC: Product Landing Page</title>
-    <style>
-        * {
-            border: 1px solid red;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
+
 <header id="header">
     <div class="company-logo">
-        <img id="header-img" src="#" title="You Spark Joy Industries logo"
+        <img id="header-img" src="img/you-spark-joy-inds-logo.png" title="You Spark Joy Industries logo"
              alt="Company logo with its letters in purple on a white background with a black circle in the center">
     </div>
     <nav id="nav-bar">
         <ul>
             <li>
-                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#introduction">Features</a>
             </li>
             <li>
                 <a class="nav-link" href="#how-it-works">How It Works</a>
@@ -29,106 +29,132 @@
         </ul>
     </nav>
 </header>
-<section class="introduction">
-    <h1>Home-made masterpieces</h1>
-    <p>(You will not need anythig else to make your dreams come true)</p>
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" type="email" name="email" placeholder="Enter your email address." required>
-        <input id="submit" class="btn" type="submit" value="Get Started">
-    </form>
-</section>
-<div class="main">
-    <section id="features">
-        <h2>Our commitments</h2>
-        <div class="grid">
-            <div class="icon">ICON-1</div>
-            <div class="description">
-                <h2>Premium Materials</h2>
-                <p>Your Home-made masterpieces use the shiniest happiness which is sourced locally. This will increase the longevity of
-                    your purchase.</p>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="icon">ICON-2</div>
-            <div class="description">
-                <h2>Fast Shipping</h2>
-                <p>We make sure you recieve your future Home-made masterpiece as soon as you have finished making it. We also provide free
-                    returns if you are not satisfied.</p>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="icon">ICON-3</div>
-            <div class="description">
-                <h2>Quality Assurance</h2>
-                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test
-                    your future Home-made masterpiece.</p>
-            </div>
-        </div>
-    </section>
-    <section id="how-it-works">
-        <h2>How it works!</h2>
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/n0fgzf5HxPY"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-    </section>
-    <section id="pricing">
-        <h2>Pricing</h2>
-        <div id="white-orchids">
-            <div class="stage">
-                White Orchids
-            </div>
-            <img id="white-orchids-img" src="#" title="flowers to find inspiration"
-                 alt="two orchids with white flowers in spring">
-            <h2>Price: Water, Light and Patience</h2>
-            <ol>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-        </div>
-        <div id="tiny-pencils">
-            <div class="stage">
-                Tiny Pencils
-            </div>
-            <img id="tiny-pencils-img" src="#" title="pencils to draw your dreams"
-                 alt="two little pencils on a wooden table">
-            <h2>Price: Desire to build</h2>
-            <ol>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-        </div>
-        <div id="old-sewing-machine">
-            <div class="stage">
-                Old Sewing Machine
-            </div>
-            <img id="old-sewing-machine-img" src="#"
-                 title="An old sewing machine to weave your projects" alt="An old black sewing machine of alpha brand">
-            <h2>Price: Love and Passion</h2>
-            <ol>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-        </div>
-    </section>
+<div class="container">
+
 </div>
-<footer>
-    <ul>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    <span>Designed by Gabriel ML, Copyright 2019</span>
-    <span>Inspired by <a href="https://www.freecodecamp.org/">freeCodeCamp</a></span>
-</footer>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div id="page-wrapper">
+    <section id="introduction">
+        <h1>Home-made masterpieces</h1>
+        <p>(You will not need anythig else to make your dreams come true)</p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" name="email" placeholder="Enter your email address." required>
+            <input id="submit" class="btn" type="submit" value="Get Started">
+        </form>
+    </section>
+    <div class="main">
+        <section id="features">
+            <h2 class="sections-title">Features</h2>
+            <div class="grid">
+                <div class="icon"><i class="fas fa-star"></i>
+                </div>
+                <div class="description">
+                    <h2>Premium Materials</h2>
+                    <p>Your Home-made masterpieces use the shiniest happiness which is sourced locally. This will
+                        increase
+                        the longevity of
+                        your purchase.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon"><i class="fas fa-shipping-fast"></i></div>
+                <div class="description">
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you recieve your future Home-made masterpiece as soon as possible. We
+                        also provide free
+                        returns if you are not satisfied.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon"><i class="far fa-check-circle"></i></i></div>
+                <div class="description">
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
+                        test
+                        your future Home-made masterpiece.</p>
+                </div>
+            </div>
+        </section>
+        <section id="how-it-works">
+            <h2 class="sections-title">&#9759; How it works! &#9759;</h2>
+            <div id="iframe-portrait">
+                <iframe id="video" src="https://www.youtube.com/embed/n0fgzf5HxPY"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="pricing">
+            <h2 class="sections-title">Pricing</h2>
+            <div id="white-orchids">
+                <div class="stage">
+                    White Orchids
+                </div>
+                <div class="portrait-img">
+                    <img class="pricing-imgs" src="img/white-orchids.jpeg" title="flowers to find inspiration"
+                         alt="two orchids with white flowers in spring">
+                </div>
+                <h2>Price: Patience</h2>
+                <ol>
+                    <li>Helps to relax.</li>
+                    <li>Raise energy levels.</li>
+                    <li>Convey emotions and feelings.</li>
+                    <li>Stimulate creativity and productivity.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div id="tiny-pencils">
+                <div class="stage">
+                    Tiny Pencils
+                </div>
+                <div class="portrait-img">
+                    <img class="pricing-imgs" src="img/tiny-pencils.jpg" title="pencils to draw your dreams"
+                         alt="two little pencils on a wooden table">
+                </div>
+                <h2>Price: Desire to build</h2>
+                <ol>
+                    <li>Always loaded.</li>
+                    <li>Proven technology.</li>
+                    <li>No need to update it.</li>
+                    <li>Allows to leave the screen.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div id="old-sewing-machine">
+                <div class="stage">
+                    An Old Machine
+                </div>
+                <div class="portrait-img">
+                    <img class="pricing-imgs" src="img/old-sewing-machine.jpg"
+                         title="An old sewing machine to weave your projects"
+                         alt="An old black sewing machine of alpha brand">
+                </div>
+                <h2>Price: Love and Passion</h2>
+                <ol>
+                    <li>Make your own creations.</li>
+                    <li>Immortalizes the best moments.</li>
+                    <li>Gives your imagination more life.</li>
+                    <li>Allows to face much more elaborate jobs.</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Designed by Gabriel ML, &copy; 2019</span>
+        <span>Inspired by <a href="https://www.freecodecamp.org/">freeCodeCamp</a></span>
+        <span>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                     src="http://jigsaw.w3.org/css-validator/images/vcss"
+                     alt="Valid CSS!"/>
+            </a>
+        </span>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</div>
 </body>
 </html>

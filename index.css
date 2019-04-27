@@ -1,0 +1,318 @@
+/* Allows to visualize the structure of my page */
+* {
+    border: 1px solid red;
+    /* Reset CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS. */
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+    max-width: 950px;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Global classes */
+.container {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#introduction {
+    margin: 20px;
+}
+
+.main {
+    margin: 20px;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: #F1C411;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: orange;
+    transition: background-color 1s;
+}
+
+.grid {
+    display: flex;
+}
+
+/* Navigation bar */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0 20px 0 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #EEEEEE;
+}
+
+.company-logo {
+    width: auto
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    display: flex;
+}
+
+#nav-bar {
+    width: 100%;
+    font-weight: 400;
+    font-size: 0.7em;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    font-size: 1.5em;
+    padding: 0 10px;
+}
+
+/* Introduction */
+#introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#introduction h1 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+    margin: 20px;
+}
+
+/* Features */
+#features {
+    margin-top: 30px;
+}
+
+.sections-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: darkorange;
+}
+
+.fas, .far {
+    font-size: 3em;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+/* How it works */
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#iframe-portrait {
+    max-width: 560px;
+    height: 315px;
+    width: 100%;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+}
+
+/* Pricing */
+#pricing {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: [firstCol] 1fr [secondCol] 1fr [thirdCol] 1fr;
+    grid-template-rows: [firstRow] auto [secondRow] auto;
+    grid-template-areas:
+            "sectionsTitle sectionsTitle sectionsTitle"
+            "whiteOrchids  tinyPencils  sewingMachine ";
+}
+
+.sections-title {
+    grid-area: sectionsTitle;
+}
+
+#white-orchids {
+    grid-area: whiteOrchids;
+}
+
+#tiny-pencils {
+    grid-area: tinyPencils;
+}
+
+#old-sewing-machine {
+    grid-area: sewingMachine;
+}
+
+#white-orchids, #tiny-pencils, #old-sewing-machine {
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 3px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.stage {
+    color: black;
+    background-color: #ddd;
+    margin-right: 0.5px; /*(!)*/
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.portrait-img {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.pricing-imgs {
+    max-width: 90%;
+    max-height: 100%;
+}
+
+ol {
+    margin: 15px 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer li {
+    padding: 0 10px;
+}
+
+footer span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
+}
+
+/* Media Query */
+@media screen and (max-width: 900px) {
+
+    #pricing {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: [firstCol] 1fr;
+        grid-template-rows: [firstRow] auto [secondRow] auto [thirdRow] auto [fourthRow] auto;
+        grid-row-gap: 15px;
+        grid-template-areas:
+                "sectionsTitle"
+                "whiteOrchids"
+                "tinyPencils"
+                "sewingMachine ";
+    }
+
+    .stage { /*(!)*/
+        margin-top: 0.5px;
+        margin-left: 0.5px;
+
+    }
+
+    footer ul{
+        justify-content: center;
+    }
+
+    footer span {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
